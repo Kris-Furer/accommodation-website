@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Accomodation | 100 Percent Pure New Zealand</title>
+  <!-- Google Fonts -->
+  <link rel='preconnect' href='https://fonts.gstatic.com'>
+  <link href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patua+One&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='css/font-awesome.css'>
+  <link rel='stylesheet' href='css/jquery.fullPage.css'>
+  <!-- Custom Style -->
+  <link rel='stylesheet' href='css/custom.min.css'>
+  <link rel='icon' type='image/x-icon' href='favicon.ico' />
+
+</head>
+
+<body>
+  <div id='fullPage'>
+    <div class='section s1'>
+      <div class='slide' data-anchor='slide1'>
+        <div id='wrap' class='wrap'>
+          <!-- Nav Begins::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+          <nav class='landing-nav'>
+            <div class='logo'>
+              <a href=''>
+                <img src='img/logo.svg' alt='Website logo'>
+              </a>
+            </div>
+
+            <div class='nav-links'>
+              <a href='#'>Things To Do</a>
+              <a href='#'>Accomodation</a>
+              <a href='#'>My Bookings</a>
+            </div>
+
+            <div class='nav-buttons'>
+              <div class='btn my-red'>Sign Up</div>
+              <div class='btn'>Log In</div>
+            </div>
+          </nav>
+          <!-- Nav ends:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+          <div class='vertical-center'>
+            <main>
+              <div class='left'>
+                <h1 class='highlight'>Discover </h1><br>
+                <h1 class='highlight'>New Zealand </h1><br>
+                <h1 class='highlight'>Your Way</h1>
+              </div>
+
+              <div class='right'>
+                <!-- input Section starts -->
+                <form id='form' class='input-section'>
+                  <h2>Search Accomodation</h2>
+                  <!-- select location -->
+                  <label for='location'>Location</label>
+                  <select name='location' class='locationInput' id='location'>
+                    <option value='Wanaka'>Wanaka</option>
+                    <option value='Queenstown'>Queenstown</option>
+                    <option value='Fiordland'>Fiordland</option>
+                    <option value='Wellington'>Wellington</option>
+                    <option value='Kaikoura'>Kaikoura</option>
+                  </select>
+
+                  <!-- Guests -->
+                  <label for='guestNumber'>Number of guests</label>
+                  <select name='guest' id='guestNumber'>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+
+                  <!-- Dates -->
+                  <div class='dates'>
+                    <!-- start dates -->
+                    <div class='date-picker'>
+                      <label for='start'>Check In</label>
+                      <input id='start' class='start' type='date' name='start-date' data-parsley-required='true'>
+                    </div>
+                    <!-- end date-->
+                    <div class='date-picker'>
+                      <label for='end'>Check Out</label>
+                      <input id='end' class='end' type='date' name='end-date' data-parsley-required='true' data-after-date='#start'>
+                    </div>
+                  </div>
+
+                  <div id='search' class='btn my-red'>Search</div>
+
+                  <div class='sort'>
+                    <input id='sort' type='checkbox' name='sort' value=''>
+                    <p>Show me the cheapest options first</p>
+                  </div>
+                </form>
+              </div>
+              <!-- flex child 'right' ends -->
+            </main>
+            <!-- vertical centre ends -->
+          </div>
+          <!-- Wrap ends -->
+        </div>
+        <!-- Slide Ends -->
+      </div>
+      <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                           Slide 2 / Results Page
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+      <div id='locationPage' class='slide slide2' data-anchor='slide2'>
+        <div id='wrap2' class='wrap-2'>
+          <!-- nav starts::::::::::::::::::::::::::::::::::::::::::::: -->
+          <nav>
+            <div class='logo'>
+              <a href=''>
+                <img src='img/logo.svg' alt='website logo'>
+              </a>
+            </div>
+            <div class='nav-links'>
+              <a href='#'>Things To Do</a>
+              <a href='#'>Accomodation</a>
+              <a href='#'>My Bookings</a>
+            </div>
+
+            <div class='nav-buttons'>
+              <div class='btn my-red'>Sign Up</div>
+              <div class='btn'>Log In</div>
+            </div>
+          </nav>
+
+          <!-- Hero Starts::::::::::::::::::::::: -->
+          <div id='locationHero' class='hero-img'>
+            <a href='#section1/slide1'>
+              <i class='fa fa-chevron-left' aria-hidden='true'></i>
+            </a>
+            <div class='titles'>
+              <h3 class='highlight serif'>Discover</h3><br>
+              <h1 id='locationTitle' class='highlight'>Wanaka</h1>
+            </div>
+          </div>
+
+          <!-- Search details section ::::::::::::::::::-->
+          <div class='search-info'>
+            <div>
+              <p class='detail-label'>Location</p>
+              <p id='locationDetail' class='search-detail serif'>Wanaka</p>
+            </div>
+            <div>
+              <p class='detail-label'>Guests</p>
+              <p id='guestDetail' class='search-detail serif'>2 adults</p>
+            </div>
+            <div>
+              <p class='detail-label'>Check In</p>
+              <p id='checkInDetail' class='search-detail serif'>12 July</p>
+            </div>
+            <div>
+              <p class='detail-label'>Check Out</p>
+              <p id='checkOutDetail' class='search-detail serif'>14 July</p>
+            </div>
+
+            <!-- Reset Search -->
+            <a href='#section1/slide1'>
+              <div>
+                <div id='reset' class='btn my-red'>Modify search</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                      Search results
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+          <!-- error message hidden unless there are no results -->
+          <p id=myError class='my-error'>Sorry, there are no hotels which fit your selected dates, please try again</p>
+
+          <div id='results' class='hotel-grid'>
+            <!-- Results injected from js here -->
+            <div class='hotel'>
+
+              <img class='hotel-img' src='img/hotelImg.png' alt='main image of the hotel'>
+
+              <div class='grid-center'>
+                <h3>Hotel Name</h3>
+                <div class='facilities'>
+                  <p>Free Wifi<i class='fa fa-wifi'></i></p>
+                  <p>Fitness Center<i class='fa fa-heartbeat' aria-hidden='true'></i></p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo perspiciatis, eius dolores veniam iusto error, odio minus odit placeat corporis obcaecati laboriosam voluptatum ipsa. Aperiam laudantium quasi voluptas, numquam
+                  recusandae sunt minus quidem sed officiis. Adipisci. </p>
+              </div>
+
+              <div class='grid-right'>
+                <div class='rating'>
+                  <div>
+                    <h5>Great Value</h5>
+                    <div>104 reviews</div>
+                  </div>
+                  <div class='my rating-number'>7.1</div>
+                </div>
+                <div class='price'>
+                  <p>1 adult Per Night</p>
+                  <h4>NZ $129</h4>
+                </div>
+                <div class=' btn my-red'>View</div>
+              </div>
+              <!-- hotel ends -->
+            </div>
+            <!-- results sections ends -->
+          </div>
+          <!-- Wrap ends  -->
+        </div>
+        <!-- Slide 2 ends -->
+      </div>
+      <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                     Slide 3 / Hotel Page
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+      <div class='slide slide3' data-anchor='slide3'>
+        <div id='wrap3' class='wrap-3'>
+          <nav>
+            <div class='logo'>
+              <a href=''>
+                <img src='img/logo.svg' alt='website logo'>
+              </a>
+            </div>
+            <div class='nav-links'>
+              <a href='#'>Things To Do</a>
+              <a href='#'>Accomodation</a>
+              <a href='#'>My Bookings</a>
+            </div>
+
+            <div class='nav-buttons'>
+              <div class='btn my-red'>Sign Up</div>
+              <div class='btn'>Log In</div>
+            </div>
+          </nav>
+
+          <!-- Hero Starts:::::::::::::::::::::::::::::::::::::::::::: -->
+          <div id='hotelHero' class='hero-img'>
+            <a href='#section1/slide2'>
+              <i class='fa fa-chevron-left' aria-hidden='true'></i>
+            </a>
+            <div class='titles'>
+              <h1 id='hotelTitle' class='highlight'>Hotel Name Here</h1>
+            </div>
+          </div>
+
+          <!-- Main Section -->
+          <div class='selection-page'>
+            <div class='space-between'>
+              <div class='address'>
+                <p><i class='fa fa-map-marker' aria-hidden='true'></i><span id='address'></span></p>
+              </div>
+
+              <div class='rating'>
+                <div>
+                  <h5 id='ratingQuoteSelect'>Great Value</h5>
+                  <div> <span id='reviewCountSelect'>blank</span> reviews</div>
+                </div>
+                <div id='ratingNumberSelect' class='my-red rating-number'>7.1</div>
+              </div>
+            </div>
+
+            <div class='facilities'>
+              <p id='faciltyA'></p>
+              <p id='faciltyB'>Free Wifi<i class='fa fa-wifi'></i></p>
+              <p id='faciltyC'>Fitness Center<i class='fa fa-bicycle'></i></p>
+            </div>
+
+            <div class='price'>
+              <p>1 adult Per Night</p>
+              <h4>NZ $<span id='selectionPrice'>129</span></h4>
+            </div>
+
+            <div class='space-between'>
+              <div class='left'>
+                <h3>Property Description</h3>
+                <div class='description'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <div class='right'>
+                <div class='container'>
+                  <img id='smlImg1' class='hotel-img-sml' src='img/hostelImg2.png' alt='image of a hotel'>
+                  <img id='smlImg2' class='hotel-img-sml' src='img/hostelImg3.png' alt='image of a hotel'>
+                  <img id='smlImg3' class='hotel-img-sml' src='img/hostelImg.png' alt='image of a hotel'>
+                </div>
+              </div>
+            </div>
+            <!-- Booking Section -->
+            <h2 class='booking-h2'>Want to lock it in?</h2>
+            <div class='booking-section'>
+              <div class='select-room'>
+
+                <div class='room-description'>
+                  <h4 class='booking-head'>Double Room</h4>
+                  <h6 id='beds'>Two Queen Beds</h6>
+                  <p id='roomDescription'>A private room suitable for up to two people. Bed linen and towels provided</p>
+                </div>
+
+                <div class='room-quantity'>
+                  <p class='bold booking-head'>Number of rooms</p>
+                  <select name='room-quantity' id='roomQuantity'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                  </select>
+                </div>
+
+                <div class='breakfast'>
+                  <p class='bold'>Include Breakfast?<input id='checkBfast' type='checkbox' name='breakfast'></p>
+                  <p class='small' id='bfastDescription'>insert here</p>
+                  <p class='breakfastPrice'>
+                    <span class='bold'>$</span>
+                    <span class='bold ' id='bfastPrice'></span>
+                    <span class='small'> Per person, per night</span>
+                  </p>
+
+                </div>
+              </div>
+
+              <div class='my-booking'>
+                <h3>My Booking</h3>
+                <h5 class='bold'><span id='displayGuests'></span> Adults</h5>
+                <div class='inner'>
+                  <div class='inner-left'>
+                    <p>Check In</p>
+                    <p>Check Out</p>
+                    <p>Breakfast</p>
+                  </div>
+                  <div class='inner-right'>
+                    <p id=displayCheckIn>Date</p>
+                    <p id='displayCheckOut'>Date</p>
+                    <p id='displayBfast'>0</p>
+                  </div>
+                </div>
+                <!-- Totals -->
+                <div class='inner'>
+                  <div class='inner-left'>
+                    <p class='big'>Total</p>
+                  </div>
+                  <div class='inner-right'>
+                    <p>NZ $ <span id='finalTotal'></span></p>
+                  </div>
+                </div>
+                <div id='book' class='btn my-red'>Book Now</div>
+              </div>
+
+              <!-- Booking Section Ends -->
+            </div>
+            <!-- Selection page ends -->
+          </div>
+          <!-- Wrap 3 Ends -->
+        </div>
+        <!-- slide3 ends -->
+      </div>
+      <!-- Section Ends -->
+    </div>
+
+    <!-- Fullpage ends -->
+  </div>
+  <!-- Modal -->
+  <div class='modal-container' id='modalContainer'></div>
+  <div class='modal' id='modal'>
+    <div class='content'>
+      <i id='closeModal' class='fa fa-times' aria-hidden='true'></i>
+
+      <h2 class='serif'>Congratulations</h2>
+      <p>Your booking with <span>Hilton Hotel</span> has been sucessful</p>
+      <p>You should recieve an email confirmation soon</p>
+      <a href='#section1/slide1'>
+        <div id='finish' class='btn my-red'>Back to home</div>
+      </a>
+    </div>
+    <!-- modal ends -->
+  </div>
+
+  <!-- Plug in and libraries -->
+  <script src='js/jquery.js'></script>
+  <script src='js/scrolloverflow.js'></script>
+  <script src='js/jquery.fullpage.js'></script>
+  <script src='js/parsley.js'></script>
+  <!-- my custom script -->
+  <script src='js/custom.js'></script>
+</body>
+
+</html>
